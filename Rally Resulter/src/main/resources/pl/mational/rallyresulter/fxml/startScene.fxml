@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="30.0" xmlns="http://javafx.com/javafx/21.0.5" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.mational.rallyresulter.controller.StartScreenController">
+    <Button fx:id="createNewProjectButton" mnemonicParsing="false" onAction="#onCreateNewProjectButtonClick" prefWidth="160.0" text="Stwórz nową projekt" textAlignment="CENTER" />
+    <Button fx:id="loadExistingProjectButton" mnemonicParsing="false" onAction="#onLoadExistingProjectButtonClick" prefWidth="160.0" text="Wczytaj istniejący projekt" textAlignment="CENTER" />
+    <Button fx:id="exitProgramButton" mnemonicParsing="false" onAction="#onExitProgramButtonClick" prefWidth="160.0" text="Wyjdź" textAlignment="CENTER" />
+</VBox>

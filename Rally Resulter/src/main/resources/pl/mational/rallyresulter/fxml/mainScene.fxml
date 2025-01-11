@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="800.0" spacing="30.0" xmlns="http://javafx.com/javafx/21.0.5" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.mational.rallyresulter.controller.MainViewController">
+   <TabPane fx:id="tabPane" prefHeight="601.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+      <Tab fx:id="tabAnswerPattern" text="Wzór odpowiedzi" onSelectionChanged="#handleTabSelection"/>
+      <Tab fx:id="tabManageCrews" text="Dodawanie załóg" onSelectionChanged="#handleTabSelection"/>
+      <Tab fx:id="tabCrewAnswers" text="Odpowiedzi załóg" onSelectionChanged="#handleTabSelection"/>
+      <Tab fx:id="tabGenerateReport" text="Generowanie raportu" onSelectionChanged="#handleTabSelection"/>
+   </TabPane>
+</VBox>
