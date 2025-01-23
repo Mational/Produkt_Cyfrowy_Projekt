@@ -1,19 +1,14 @@
 package pl.mational.rallyresulter.controller;
 
-import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
-import javafx.scene.control.TextField;
-import javafx.scene.control.TextFormatter;
-import javafx.scene.input.InputEvent;
 import javafx.scene.layout.AnchorPane;
 import pl.mational.rallyresulter.main.RallyResulterApplication;
 
 import java.io.IOException;
-import java.util.List;
 
 public class MainViewController {
     private RallyResulterApplication mainApplication;
@@ -23,11 +18,13 @@ public class MainViewController {
     @FXML private Tab tabManageCrews;
     @FXML private Tab tabCrewAnswers;
     @FXML private Tab tabGenerateReport;
+    @FXML private Tab tabNewGame;
 
     private TabAnswerPatternController tabAnswerPatternController;
     private TabManageCrewsController tabManageCrewsController;
     private TabCrewAnswersController tabCrewAnswersController;
     private TabGenerateReportController tabGenerateReportController;
+    private TabNewGameController tabNewGameController;
 
     @FXML
     public void initialize() {
@@ -39,6 +36,8 @@ public class MainViewController {
                 controller -> tabCrewAnswersController = (TabCrewAnswersController) controller);
         loadTabContent(tabGenerateReport, "/pl/mational/rallyresulter/fxml/tabGenerateReport.fxml",
                 controller -> tabGenerateReportController = (TabGenerateReportController) controller);
+        loadTabContent(tabGenerateReport, "/pl/mational/rallyresulter/fxml/tabNewGameScene.fxml",
+                controller -> tabNewGameController = (TabNewGameController) controller);
 
         tabAnswerPattern.setOnSelectionChanged(this::handleTabSelection);
     }
@@ -67,6 +66,8 @@ public class MainViewController {
                 tabCrewAnswersController.initializeTabView();
             } else if (selectedTab == tabGenerateReport && tabGenerateReportController != null) {
                 tabGenerateReportController.initializeTabView();
+            } else if (selectedTab == tabNewGame && tabNewGameController != null) {
+                tabNewGameController.initializeTabView();
             }
         }
     }

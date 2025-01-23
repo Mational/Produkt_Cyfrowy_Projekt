@@ -10,5 +10,6 @@
       <Tab fx:id="tabManageCrews" text="Dodawanie załóg" onSelectionChanged="#handleTabSelection"/>
       <Tab fx:id="tabCrewAnswers" text="Odpowiedzi załóg" onSelectionChanged="#handleTabSelection"/>
       <Tab fx:id="tabGenerateReport" text="Generowanie raportu" onSelectionChanged="#handleTabSelection"/>
+      <Tab fx:id="tabNewGame" text="Nowy Projekt" onSelectionChanged="#handleTabSelection"/>
    </TabPane>
 </VBox>
