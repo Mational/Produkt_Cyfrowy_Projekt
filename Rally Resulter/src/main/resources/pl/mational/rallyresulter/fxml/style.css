@@ -1,0 +1,22 @@
+/*.test
+{
+    -fx-background-color: #2f2f2e;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+
+.test Label
+{
+    -fx-text-fill: #ffffff;
+}*/
+
+.toolbar-btns
+{
+    -fx-pref-height: 40;/*40 lepsze*/
+    -fx-pref-width: 40;
+}
+
+.align-right
+{
+    -fx-alignment: Right;
+}

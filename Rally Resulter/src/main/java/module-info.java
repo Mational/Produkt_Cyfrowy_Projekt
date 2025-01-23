@@ -5,6 +5,7 @@ module RallyResult {
     requires kernel;
     requires layout;
     requires io;
+    requires javafx.graphics;
 
     // Udostępnienie pakietu z klasą główną
     opens pl.mational.rallyresulter.main to javafx.graphics, com.fasterxml.jackson.databind;

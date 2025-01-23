@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox styleClass="test" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1">
+    <Label text="To begin working, please add teams and events." />
+    <TextArea editable="false">
+        <!-- Additional instructions or dynamic content -->
+    </TextArea>
+</VBox>
